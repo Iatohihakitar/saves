@@ -1,8 +1,9 @@
 ship = Drone Type A Mk B
-version = 1.3.1
+version = 1.12.0
 description = No Description.
 type = None
 size = 3.06868029,9.94378662,3.30051041
+upgraded = 1.12 RV-105 RCS Thruster Block replacement // Replaces the old RV-105 RCS Thruster Block for the new RV-105 RCS Thruster Block.
 PART
 {
 	part = radialDecoupler2_4293608952
@@ -126,22 +127,22 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
+	srfN = srfAttach,radialDecoupler2_4293608952
+	attN = top,GrapplingDevice_4293599742
+	attN = bottom,mk2DroneCore_4294139150
 	link = mk2DroneCore_4294139150
 	link = GrapplingDevice_4293599742
 	link = GearMedium_4293332094
 	link = GearMedium_4293330334
-	link = RCSBlock_4293254252
-	link = RCSBlock_4293252584
-	link = RCSBlock_4293245048
-	link = RCSBlock_4293244012
+	link = RCSBlock.v2_4293254252
+	link = RCSBlock.v2_4293252584
+	link = RCSBlock.v2_4293245048
+	link = RCSBlock.v2_4293244012
 	link = RadialDrill_4293189476
 	link = SurfaceScanner_4292973086
 	link = mumech.MJ2.AR202_4292790468
 	link = radialDrogue_4292444724
 	link = radialDrogue_4292441502
-	srfN = srfAttach,radialDecoupler2_4293608952
-	attN = top,GrapplingDevice_4293599742
-	attN = bottom,mk2DroneCore_4294139150
 	EVENTS
 	{
 	}
@@ -213,13 +214,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = mk2DockingPort_4293571692
-	link = RCSBlock_4293267994
-	link = RCSBlock_4293263776
-	link = RCSBlock_4293261504
-	link = RCSBlock_4293257756
 	attN = top,mk2SpacePlaneAdapter_4294104612
 	attN = bottom,mk2DockingPort_4293571692
+	link = mk2DockingPort_4293571692
+	link = RCSBlock.v2_4293267994
+	link = RCSBlock.v2_4293263776
+	link = RCSBlock.v2_4293261504
+	link = RCSBlock.v2_4293257756
 	EVENTS
 	{
 	}
@@ -537,12 +538,15 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
+	attN = top,mk2DockingPort_4293571692
+	attN = bottom01,batteryBank_4293105948
+	attN = bottom02,batteryBank_4293107300
 	link = GearMedium_4293340826
 	link = GearMedium_4293339088
-	link = RCSBlock_4293256540
-	link = RCSBlock_4293255920
-	link = RCSBlock_4293247536
-	link = RCSBlock_4293246196
+	link = RCSBlock.v2_4293256540
+	link = RCSBlock.v2_4293255920
+	link = RCSBlock.v2_4293247536
+	link = RCSBlock.v2_4293246196
 	link = radialDrogue_4293235984
 	link = radialDrogue_4293234544
 	link = parachuteRadial_4293232314
@@ -552,9 +556,6 @@ PART
 	link = batteryBank_4293105948
 	link = radPanelLg_4293086374
 	link = radPanelLg_4292362556
-	attN = top,mk2DockingPort_4293571692
-	attN = bottom01,batteryBank_4293105948
-	attN = bottom02,batteryBank_4293107300
 	EVENTS
 	{
 	}
@@ -1124,7 +1125,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293256540
+	part = RCSBlock.v2_4293256540
 	partName = Part
 	pos = -2.79207397,15.7197304,-6.32893658
 	attPos = 0,0,0
@@ -1189,7 +1190,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293255920
+	part = RCSBlock.v2_4293255920
 	partName = Part
 	pos = -3.7259717,15.7069159,-6.32745123
 	attPos = 0,0,0
@@ -1254,7 +1255,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293247536
+	part = RCSBlock.v2_4293247536
 	partName = Part
 	pos = -3.26101136,16.805315,-5.02127743
 	attPos = 0,0,0
@@ -1320,7 +1321,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293246196
+	part = RCSBlock.v2_4293246196
 	partName = Part
 	pos = -3.26101232,16.805315,-7.63511086
 	attPos = 0,0,0
@@ -2845,7 +2846,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293267994
+	part = RCSBlock.v2_4293267994
 	partName = Part
 	pos = -3.26249695,18.4291973,-7.63683748
 	attPos = 0,0,0
@@ -2911,7 +2912,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293263776
+	part = RCSBlock.v2_4293263776
 	partName = Part
 	pos = -3.26249504,18.4291973,-5.0195508
 	attPos = 0,0,0
@@ -2977,7 +2978,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293261504
+	part = RCSBlock.v2_4293261504
 	partName = Part
 	pos = -4.04847383,18.5181961,-6.32745123
 	attPos = 0,0,0
@@ -3042,7 +3043,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293257756
+	part = RCSBlock.v2_4293257756
 	partName = Part
 	pos = -2.47518992,18.4578514,-6.32893705
 	attPos = 0,0,0
@@ -3747,7 +3748,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293254252
+	part = RCSBlock.v2_4293254252
 	partName = Part
 	pos = -3.93601942,20.2879295,-6.32745171
 	attPos = 0,0,0
@@ -3812,7 +3813,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293252584
+	part = RCSBlock.v2_4293252584
 	partName = Part
 	pos = -2.58332968,20.2507668,-6.32893658
 	attPos = 0,0,0
@@ -3877,7 +3878,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293245048
+	part = RCSBlock.v2_4293245048
 	partName = Part
 	pos = -3.26101065,20.4179802,-5.63552189
 	attPos = 0,0,0
@@ -3943,7 +3944,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4293244012
+	part = RCSBlock.v2_4293244012
 	partName = Part
 	pos = -3.2610116,20.4179802,-7.02086639
 	attPos = 0,0,0

@@ -1,9 +1,11 @@
 ship = Lander Type A Mk E
-version = 1.7.0
+version = 1.12.0
 description = Can land on heavy bodies with atmosphere or light bodies without
 type = None
 size = 2.09690142,3.66835785,1.87163544
-upgraded = 1.7 TR-18D replacement // Replaces the old TR-18D Stack Separator for the TS-12 Separator.
+upgraded = 1.7 TR-18D replacement
+upgraded = 1.12 Probodobodyne OKTO2 replacement // Replaces the old Probodobodyne OKTO2 for the new Probodobodyne OKTO2.
+upgraded = 1.12 RV-105 RCS Thruster Block replacement // Replaces the old RV-105 RCS Thruster Block for the new RV-105 RCS Thruster Block.
 PART
 {
 	part = HeatShield1_4289316380
@@ -1988,10 +1990,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = RCSBlock_4289315298
-	link = RCSBlock_4289315232
-	link = RCSBlock_4289315166
-	link = RCSBlock_4289315100
+	attN = top,xenonTankLarge_4289314050
+	attN = bottom,fuelTank_4289315392
+	link = RCSBlock.v2_4289315298
+	link = RCSBlock.v2_4289315232
+	link = RCSBlock.v2_4289315166
+	link = RCSBlock.v2_4289315100
 	link = strutCube_4289315034
 	link = strutCube_4289314906
 	link = miniLandingLeg_4289314778
@@ -1999,8 +2003,6 @@ PART
 	link = miniLandingLeg_4289314414
 	link = miniLandingLeg_4289314232
 	link = xenonTankLarge_4289314050
-	attN = top,xenonTankLarge_4289314050
-	attN = bottom,fuelTank_4289315392
 	EVENTS
 	{
 	}
@@ -2039,7 +2041,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289315298
+	part = RCSBlock.v2_4289315298
 	partName = Part
 	pos = -2.42956448,35.3094978,-0.0306061208
 	attPos = -0.871364951,0.000977516174,0.872414589
@@ -2122,7 +2124,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289315232
+	part = RCSBlock.v2_4289315232
 	partName = Part
 	pos = -2.42956448,35.3094978,-0.830605984
 	attPos = 0.072414577,0.000977516174,0.0713649392
@@ -2205,7 +2207,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289315166
+	part = RCSBlock.v2_4289315166
 	partName = Part
 	pos = -1.62956452,35.3094978,-0.0306060016
 	attPos = 0.871364951,0.000977516174,-0.0724146962
@@ -2288,7 +2290,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289315100
+	part = RCSBlock.v2_4289315100
 	partName = Part
 	pos = -1.62956464,35.3094978,-0.830605984
 	attPos = -0.0724146962,0.000977516174,-0.871364832
@@ -4150,16 +4152,16 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = RCSBlock_4289313594
-	link = RCSBlock_4289313528
-	link = RCSBlock_4289313462
-	link = RCSBlock_4289313396
+	attN = top,batteryBank_4289313056
+	attN = bottom,xenonTankLarge_4289314050
+	link = RCSBlock.v2_4289313594
+	link = RCSBlock.v2_4289313528
+	link = RCSBlock.v2_4289313462
+	link = RCSBlock.v2_4289313396
 	link = SurfAntenna_4289313330
 	link = landingLeg1-2_4289313296
 	link = landingLeg1-2_4289313176
 	link = batteryBank_4289313056
-	attN = top,batteryBank_4289313056
-	attN = bottom,xenonTankLarge_4289314050
 	EVENTS
 	{
 	}
@@ -4198,7 +4200,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289313594
+	part = RCSBlock.v2_4289313594
 	partName = Part
 	pos = -2.42956448,36.1094933,-0.0306061208
 	attPos = -0.875453174,-0.0098657608,0.876502752
@@ -4281,7 +4283,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289313528
+	part = RCSBlock.v2_4289313528
 	partName = Part
 	pos = -2.42956448,36.1094933,-0.830605984
 	attPos = 0.0765027404,-0.0098657608,0.0754532218
@@ -4364,7 +4366,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289313462
+	part = RCSBlock.v2_4289313462
 	partName = Part
 	pos = -1.62956452,36.1094933,-0.0306060016
 	attPos = 0.875453174,-0.0098657608,-0.0765028596
@@ -4447,7 +4449,7 @@ PART
 }
 PART
 {
-	part = RCSBlock_4289313396
+	part = RCSBlock.v2_4289313396
 	partName = Part
 	pos = -1.62956464,36.1094933,-0.830605984
 	attPos = -0.0765028596,-0.0098657608,-0.875453115
@@ -5515,8 +5517,8 @@ PART
 	modSize = 0,0,0
 	link = largeSolarPanel_4289312748
 	link = largeSolarPanel_4289312676
-	link = probeCoreOcto2_4289312604
-	attN = top,probeCoreOcto2_4289312604
+	link = probeCoreOcto2.v2_4289312604
+	attN = top,probeCoreOcto2.v2_4289312604
 	attN = bottom,batteryBank_4289313056
 	EVENTS
 	{
@@ -5730,7 +5732,7 @@ PART
 }
 PART
 {
-	part = probeCoreOcto2_4289312604
+	part = probeCoreOcto2.v2_4289312604
 	partName = Part
 	pos = -2.02956462,36.9089737,-0.430605978
 	attPos = 0,0,0
@@ -6004,7 +6006,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = bottom01,probeCoreOcto2_4289312604
+	attN = bottom01,probeCoreOcto2.v2_4289312604
 	EVENTS
 	{
 	}
